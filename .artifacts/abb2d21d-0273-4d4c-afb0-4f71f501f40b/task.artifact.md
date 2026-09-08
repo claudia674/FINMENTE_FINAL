@@ -1,0 +1,6 @@
+- `[x]` Implementar Tela de Splash Básica
+- `[x]` Redesign Premium da Tela de Splash
+    - `[x]` Criar fundo degradê `splash_gradient.xml`
+    - `[x]` Atualizar layout `activity_splash.xml` com design moderno (apenas texto)
+    - `[x]` Adicionar animações de entrada em `SplashActivity.java`
+- `[x]` Verificar requisitos finais para entrega

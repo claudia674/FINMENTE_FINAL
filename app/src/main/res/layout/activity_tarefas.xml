@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TarefasActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_priority_tag"
+        android:backgroundTint="@color/soft_yellow"
+        android:gravity="center"
+        android:layout_marginHorizontal="-16dp"
+        android:layout_marginTop="-16dp">
+        <TextView
+            android:id="@+id/tvDataHoje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUARTA-FEIRA, 26 DE AGOSTO"
+            android:textColor="@color/vibrant_yellow"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSaudacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minhas Tarefas"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Calendar Card -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/DashboardCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:strokeColor="@color/soft_yellow"
+        app:strokeWidth="2dp">
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Input Area -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/DashboardCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/edtTituloTarefa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="O que você precisa fazer?"
+                android:inputType="textCapSentences"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color"
+                android:layout_marginVertical="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/edtHorarioTarefa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Horário (ex: 10:00)"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp"
+                    android:textSize="16sp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPrioridade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/prioridades"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchAlerta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ativar Alerta (Despertador)"
+                android:padding="8dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- CRUD Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdicionarTarefa"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adicionar"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/vibrant_green"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAlterarTarefa"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alterar"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/vibrant_blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcluirTarefa"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Excluir"
+            app:backgroundTint="@color/coral"/>
+    </LinearLayout>
+
+    <!-- List -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAREFAS"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listViewTarefas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <Button
+        android:id="@+id/btnVoltarTarefas"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao Menu"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

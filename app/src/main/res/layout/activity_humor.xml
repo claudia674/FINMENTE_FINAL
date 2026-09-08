@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humor Financeiro"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radioHumor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbFeliz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊 Feliz"/>
+
+        <RadioButton
+            android:id="@+id/rbNeutro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😐 Neutro"/>
+
+        <RadioButton
+            android:id="@+id/rbPreocupado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😟 Preocupado"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalvarHumor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Humor"/>
+
+    <Button
+        android:id="@+id/btnVoltarHumor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao Menu"/>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+- [x] Implementar diálogo explicativo para permissão de notificações na `TarefasActivity.java`
+- [x] Verificar build e fluxo de permissão

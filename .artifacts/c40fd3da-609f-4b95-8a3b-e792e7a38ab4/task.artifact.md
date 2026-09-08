@@ -1,0 +1,4 @@
+- [x] Alterar driver do MySQL no build.gradle.kts (versão 5.1.49)
+- [x] Atualizar ConexaoMySQL.java para usar o driver antigo compatível com Android
+- [x] Sincronizar Gradle e compilar o projeto
+- [x] Criar Walkthrough de correção

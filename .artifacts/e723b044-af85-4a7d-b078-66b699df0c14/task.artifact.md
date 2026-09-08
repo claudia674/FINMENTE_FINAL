@@ -1,0 +1,9 @@
+- [x] Adicionar string `title_dashboard` ao `strings.xml`
+- [x] Atualizar `activity_menu.xml` para usar o novo título
+- [x] Verificar a alteração na UI
+- [x] Adicionar novas seções ao "Meu Espaço Privado"
+- [x] Redesign para "Meu Espaço" e Novas Funcionalidades
+    - [x] Atualizar strings no `strings.xml`
+    - [x] Reorganizar `activity_menu.xml` in seções "Privado" e "Finanças"
+    - [x] Adicionar novos itens ao grid (Energia, Autocuidado, Diário)
+    - [x] Atualizar `MenuActivity.java` com novos listeners

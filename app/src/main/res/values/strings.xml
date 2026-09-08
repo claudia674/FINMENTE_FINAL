@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Finmente</string>
+    <string name="title_login">LOGIN</string>
+    <string name="hint_email">Digite seu E-mail</string>
+    <string name="hint_password">Digite sua Senha</string>
+    <string name="btn_enter">Entrar</string>
+    <string name="btn_create_account">Criar Conta</string>
+    <string name="btn_forgot_password">Esqueci a Senha</string>
+    <string name="app_brand">FINMENTE</string>
+    <string name="title_dashboard">MEU ESPAÇO</string>
+    <string name="label_privado">PRIVADO</string>
+    <string name="label_financas">FINANÇAS</string>
+    <string name="label_energia">Tarefas de Hoje</string>
+    <string name="label_autocuidado">Meu Momento</string>
+    <string name="label_livre">Livre</string>
+    <string name="label_pessoal">Pessoal</string>
+    <string name="label_estetica">Estética</string>
+    <string name="label_diario">Diário Pessoal</string>
+    <string name="hint_titulo_diario">Título do registro</string>
+    <string name="hint_conteudo_diario">Minha evolução hoje...</string>
+    <string name="frase_diario_1">Organize uma pequena parte da sua vida.</string>
+    <string name="frase_diario_2">Pare de esperar o momento perfeito e comece.</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_excluir">Excluir</string>
+    <string name="label_checkin">Check-in diário</string>
+    <string name="label_conquistas">Pequenas conquistas</string>
+    <string name="label_objetivos">Objetivos pessoais</string>
+    <string name="status_pendente">Pendente</string>
+    <string name="status_vazio">0 hoje</string>
+    <string name="status_objetivos">3 ativos</string>
+
+    <!-- Cadastro -->
+    <string name="title_register">CRIAR CONTA</string>
+    <string name="hint_name">Digite seu Nome</string>
+    <string name="hint_confirm_password">Confirme sua Senha</string>
+    <string name="btn_already_have_account">Já tenho uma conta</string>
+
+    <!-- Recuperar Senha -->
+    <string name="title_forgot_password">RECUPERAR SENHA</string>
+    <string name="label_recovery_info">Digite seu e-mail para recuperar a senha.</string>
+    <string name="btn_send_recovery">Enviar</string>
+    <string name="btn_back">Voltar</string>
+</resources>

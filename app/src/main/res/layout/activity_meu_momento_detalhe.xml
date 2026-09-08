@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MeuMomentoDetalheActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_priority_tag"
+        android:backgroundTint="@color/soft_blue"
+        android:gravity="center"
+        android:layout_marginHorizontal="-16dp"
+        android:layout_marginTop="-16dp">
+        <TextView
+            android:id="@+id/tvHeaderMomento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEU MOMENTO"
+            android:textColor="@color/vibrant_blue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTituloCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Input Area -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/DashboardCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/edtTituloMomento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título do registro"
+                android:inputType="textCapSentences"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color"
+                android:layout_marginVertical="8dp"/>
+
+            <EditText
+                android:id="@+id/edtDescricaoMomento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:gravity="top"
+                android:hint="O que aconteceu hoje?"
+                android:inputType="textMultiLine|textCapSentences"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- CRUD Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalvarMomento"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/vibrant_green"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditarMomento"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/vibrant_blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcluirMomento"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Excluir"
+            app:backgroundTint="@color/coral"/>
+    </LinearLayout>
+
+    <!-- List -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEUS REGISTROS"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listViewMomento"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+    <Button
+        android:id="@+id/btnVoltarMomentoDetalhe"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao Menu"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

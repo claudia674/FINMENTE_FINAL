@@ -58,4 +58,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
 
     implementation(libs.mysql.connector)
+    implementation(libs.androidx.core.splashscreen)
 }

@@ -7,14 +7,24 @@
 
     <!-- Glowing Background Elements -->
     <View
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:background="@drawable/bg_login_sophisticated"
-        android:alpha="0.3"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_glow_purple"
+        android:alpha="0.4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="-100dp"
-        android:layout_marginEnd="-100dp"/>
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="-150dp"/>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_glow_purple"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginStart="-100dp"/>
 
     <LinearLayout
         android:id="@+id/layout_content_splash"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="288"
+    android:viewportHeight="288">
+
+    <!-- Outer Glow -->
+    <path
+        android:pathData="M144,144m-120,0a120,120 0,1 1,240 0a120,120 0,1 1,-240 0"
+        android:fillColor="#15A855F7"/>
+
+    <!-- Stylized 'F' or Rocket Logo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M144,60 L180,180 L144,160 L108,180 Z" />
+
+    <path
+        android:fillColor="#A855F7"
+        android:pathData="M144,160 L180,180 L144,220 L108,180 Z" />
+
+</vector>

@@ -23,6 +23,8 @@ public class ConexaoMySQL {
                     + "&serverTimezone=UTC";
 
     private static final String USUARIO = "avnadmin";
+
+
     private static final String SENHA = "SUA_SENHA_AIVEN";
 
     @Nullable
